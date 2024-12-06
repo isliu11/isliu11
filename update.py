@@ -63,9 +63,11 @@ abstract_tpl = """## Abstract
 </p>
 
 
+## Tech Stack
+![skills](https://skillicons.dev/icons?i=ts,vue,c,cpp,go,py,html,css,js,nodejs,java,qt,pytorch,tensorflow)
 
-![skills](https://skillicons.dev/icons?i=ts,vue,vite,c,cpp,go,py,html,css,js,nodejs,java,md,pytorch,tensorflow,flask,fastapi,express,qt,react,cmake,docker,git,linux,nginx,mysql,redis,sqlite,githubactions,,visualstudio,vscode)
-
+## Tools
+![tools](https://skillicons.dev/icons?i=npm,yarn,vite,docker,git,nginx,mysql,redis,sqlite,githubactions,visualstudio,vscode)
 """
 
 
