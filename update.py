@@ -64,7 +64,7 @@ abstract_tpl = """## Abstract
 
 
 
-![skills](https://skillicons.dev/icons?i=c,cpp,go,py,html,css,js,nodejs,java,md,pytorch,tensorflow,flask,fastapi,express,qt,react,cmake,docker,git,linux,nginx,mysql,redis,sqlite,githubactions,heroku,vercel,visualstudio,vscode)
+![skills](https://skillicons.dev/icons?i=ts,vue,vite,c,cpp,go,py,html,css,js,nodejs,java,md,pytorch,tensorflow,flask,fastapi,express,qt,react,cmake,docker,git,linux,nginx,mysql,redis,sqlite,githubactions,,visualstudio,vscode)
 
 """
 
@@ -89,6 +89,7 @@ def render(github_username, github_data, zhihu_username='') -> str:
     markdown = ""
     global abstract_tpl
     global top_repos_tpl
+    markdown += abstract_tpl.format(github_username=github_username, github_name=github_data['name'])
     for repo in github_data['top_repos']:
         top_repos_tpl += "|[{name}]({link})|{description}|`{star}⭐`|\n".format(**repo)
     markdown += top_repos_tpl
