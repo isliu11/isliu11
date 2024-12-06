@@ -18,7 +18,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
       with:
-        ref: "master"
+        ref: "main"
     - uses: actions/setup-python@v2
       with:
         python-version: '3.8'
@@ -34,7 +34,7 @@ jobs:
         git config user.name "${GIT_USER}"
         git config user.email "${GIT_EMAIL}"
         git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git
-        git checkout master
+        git checkout main
         git add ./README.md
         git commit -m ":book: update by GitHub Actions"
-        git push -u origin master
+        git push -u origin main
