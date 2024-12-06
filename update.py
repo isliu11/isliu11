@@ -62,18 +62,12 @@ abstract_tpl = """## Abstract
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username={github_username}&layout=compact&hide_border=true&langs_count=10" alt="{github_name}'s Top Langs" width="37%" /> 
 </p>
 
-<a href="https://github.com/songquanpeng/stats-cards">
-<p>
-  <img src="https://stats.justsong.cn/api/leetcode/?username=quanpeng&theme=light" alt="JustSong's LeetCode Stats" width="49%" />
-  <img src="https://stats.justsong.cn/api/zhihu/?username=songwonderful&theme=light" alt="JustSong's Zhihu Stats" width="49%" /> 
-</p>
-</a>
+
 
 ![skills](https://skillicons.dev/icons?i=c,cpp,go,py,html,css,js,nodejs,java,md,pytorch,tensorflow,flask,fastapi,express,qt,react,cmake,docker,git,linux,nginx,mysql,redis,sqlite,githubactions,heroku,vercel,visualstudio,vscode)
 
 """
 
-zhihu_tpl = "[![{github_name}'s Zhihu Stats](https://stats.justsong.cn/api/zhihu?username={zhihu_username})](https://github.com/songquanpeng/readme-stats)\n"
 
 recent_repos_tpl = """\n## Recent Updates
 |Project|Description|Last Update|
@@ -94,10 +88,6 @@ footer_tpl = f"""
 def render(github_username, github_data, zhihu_username='') -> str:
     markdown = ""
     global abstract_tpl
-    if zhihu_username:
-        abstract_tpl += zhihu_tpl
-    markdown += abstract_tpl.format(github_username=github_username, github_name=github_data['name'],
-                                    zhihu_username=zhihu_username)
     global top_repos_tpl
     for repo in github_data['top_repos']:
         top_repos_tpl += "|[{name}]({link})|{description}|`{star}⭐`|\n".format(**repo)
