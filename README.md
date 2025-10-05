@@ -20,9 +20,9 @@
 ## Recent Updates
 |Project|Description|Last Update|
 |:--|:--|:--|
-|[isliu11](https://github.com/isliu11/isliu11)|Config files for my GitHub profile.|![2025-09-21 20:01:07](https://img.shields.io/badge/2025--09--21-20%3A01%3A07-brightgreen?style=flat-square)|
+|[isliu11](https://github.com/isliu11/isliu11)|Config files for my GitHub profile.|![2025-09-28 20:01:05](https://img.shields.io/badge/2025--09--28-20%3A01%3A05-brightgreen?style=flat-square)|
 |[FastestDNS](https://github.com/isliu11/FastestDNS)|A simple application to find the fastest DNS (unfinished)|![2024-12-05 11:52:02](https://img.shields.io/badge/2024--12--05-11%3A52%3A02-brightgreen?style=flat-square)|
 
 
 
-*Last updated on: 2025-09-28 20:01:04*
+*Last updated on: 2025-10-05 20:01:00*
